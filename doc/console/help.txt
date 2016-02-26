@@ -1,5 +1,5 @@
 
-  Usage: mock [options] [--rule path-to-rule.js]
+  Usage: mock [options] [--rules path-to-rules.js]
 
 
   Options:
@@ -8,7 +8,7 @@
                                     9528 for default.
   -h, --host host ................. Specify the hostname for proxy server.
                                     127.0.0.1 for default.
-  -r, --rule file ................. Specified an rule file.
+  -r, --rules file ................ Specified an rule file.
   -d, --debug ..................... Show debugging information whilst running.
   -v, --verbose ................... Show verbose logging whilst running.
   -s, --silent .................... Disable any logs.
