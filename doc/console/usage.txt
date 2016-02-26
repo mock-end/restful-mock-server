@@ -1,0 +1,3 @@
+  Usage: mock [options] [--rule path-to-rule.js]
+
+  See "mock --help" for more.

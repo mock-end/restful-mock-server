@@ -1,0 +1,48 @@
+{
+  "name": "restful-mock-server",
+  "version": "0.0.1",
+  "description": "A mock server returning random JSON from schema.",
+  "bin": {
+    "flexproxy": "./bin/app"
+  },
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubkoo/restful-mock-server.git"
+  },
+  "keywords": [
+    "mock",
+    "restful",
+    "server"
+  ],
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo@163.com",
+    "url": "http://bubkoo.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bubkoo/restful-mock-server/issues"
+  },
+  "homepage": "https://github.com/bubkoo/restful-mock-server",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "colors": "^1.1.2",
+    "connect": "^3.4.1",
+    "cookie": "^0.2.3",
+    "cookie-signature": "^1.0.6",
+    "gaze": "^0.5.2",
+    "js-yaml": "^3.5.3",
+    "json-from-template": "0.0.1",
+    "lodash": "^4.5.1",
+    "morgan": "^1.7.0",
+    "parseurl": "^1.3.1",
+    "path-to-regexp": "^1.2.1",
+    "portscanner": "^1.0.0",
+    "qs": "^6.1.0"
+  }
+}

@@ -1,0 +1,35 @@
+
+  Usage: mock [options] [--rule path-to-rule.js]
+
+
+  Options:
+
+  -p, --port port ................. Specify the port for proxy server.
+                                    9528 for default.
+  -h, --host host ................. Specify the hostname for proxy server.
+                                    127.0.0.1 for default.
+  -r, --rule file ................. Specified an rule file.
+  -d, --debug ..................... Show debugging information whilst running.
+  -v, --verbose ................... Show verbose logging whilst running.
+  -s, --silent .................... Disable any logs.
+  -V, --version ................... Print the current version.
+  --no-color ...................... Disable colors in the console.
+  -h, --help ...................... You're looking at it.
+
+  Note: By default, flexproxy just proxy the request and log the details.
+  If an rule file specified, flexproxy will match every request from the
+   rules firstly, and handle it if any matched rule found.
+
+  To learn more about rule file: flexproxy --help config
+  See also the sample: https://github.com/bubkoo/flex-proxy/
+
+  Examples:
+
+  $ mock
+  $ mock --debug
+  $ mock --rule ./data/rule.js
+  $ mock --client --rule ./data/rule.js
+  $ mock --client --client-port 9090 --client-host localhost
+  $ mock --client --silent
+
+  For more details see https://github.com/bubkoo/flex-proxy/
