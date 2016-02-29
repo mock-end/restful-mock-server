@@ -1,20 +1,24 @@
 
   Usage: mock [options] [--rules path-to-rules.js]
 
+
   Options:
 
-  -p, --port port ................. Specify the port for proxy server.
-                                    9528 for default.
-  -h, --host host ................. Specify the hostname for proxy server.
-                                    127.0.0.1 for default.
-  -r, --rules file ................ Specified an rule file.
-  -d, --debug ..................... Show debugging information whilst running.
-  -v, --verbose ................... Show verbose logging whilst running.
-  -s, --silent .................... Disable any logs.
-  -V, --version ................... Print the current version.
-  --no-color ...................... Disable colors in the console.
-  -h, --help ...................... You're looking at it.
-  -h, --help command .............. Show details for the specified command.
+  -r, --rules file .......... Specified an rule file. `mock --help rules` for more information.
+  -p, --port port ........... Specify the port for proxy server. Default: 9528.
+  -h, --host host ........... Specify the hostname for proxy server. Default: '127.0.0.1'.
+  -w, --watch ............... When true the rules will auto update when the rule files changed.
+  -d, --debug ............... Show debugging information whilst running. Default: true.
+  -v, --verbose ............. Show verbose logging whilst running. Default: false.
+  -s, --silent .............. Disable any logs. Default: false.
+  --sensitive ............... When true the route will be case sensitive. Default: false.
+  --strict .................. When false the trailing slash is optional. Default: false.
+  --end ..................... When false the path will match at the beginning. Default: true.
+  -V, --version ............. Print the current version.
+  -h, --help ................ You're looking at it.
+  -h, --help command ........ Show details for the specified command.
+  --no-color ................ Disable colors in the console.
+
 
   Note: By default, mock just start a server. If an rule file specified, mock
   server will match every request from the rules firstly, and try to match with
@@ -23,6 +27,7 @@
 
   To learn more about rule files: mock --help rules. See also the samples:
   https://github.com/bubkoo/restful-mock-server/tree/master/rules
+
 
   Examples:
 
