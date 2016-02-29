@@ -7,7 +7,7 @@ module.exports = {
             data: {
                 'code': '0',
                 'message': '',
-                'data': '@fromFile("./mock/data/huge.json")'
+                'data': '@fromFile("./rules/data/huge.json")'
             }
         }
     }

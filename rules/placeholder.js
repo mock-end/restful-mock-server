@@ -6,7 +6,7 @@ module.exports = {
                     'inc1|10': [
                         {
                             message:'start 1, step 1',
-                            result:'@inc(1, 1)'
+                            result:'@step(1, 1)'
                         }
                     ]
                 }
