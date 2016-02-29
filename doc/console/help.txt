@@ -1,7 +1,6 @@
 
   Usage: mock [options] [--rules path-to-rules.js]
 
-
   Options:
 
   -p, --port port ................. Specify the port for proxy server.
@@ -15,21 +14,23 @@
   -V, --version ................... Print the current version.
   --no-color ...................... Disable colors in the console.
   -h, --help ...................... You're looking at it.
+  -h, --help command .............. Show details for the specified command.
 
-  Note: By default, flexproxy just proxy the request and log the details.
-  If an rule file specified, flexproxy will match every request from the
-   rules firstly, and handle it if any matched rule found.
+  Note: By default, mock just start a server. If an rule file specified, mock
+  server will match every request from the rules firstly, and try to match with
+  the rules, if any rule matched it will response with the mocked data, otherwise
+  it will response with 404.
 
-  To learn more about rule file: flexproxy --help config
-  See also the sample: https://github.com/bubkoo/flex-proxy/
+  To learn more about rule files: mock --help rules. See also the samples:
+  https://github.com/bubkoo/restful-mock-server/tree/master/rules
 
   Examples:
 
   $ mock
-  $ mock --debug
-  $ mock --rule ./data/rule.js
-  $ mock --client --rule ./data/rule.js
-  $ mock --client --client-port 9090 --client-host localhost
-  $ mock --client --silent
+  $ mock --rule ./rules/random.js
+  $ mock --rule ./rules/random.js --debug
+  $ mock --rule ./rules/random.js --port 9000 --host 127.0.0.1
+  $ mock --help
+  $ mock --help rules
 
-  For more details see https://github.com/bubkoo/flex-proxy/
+  For more details see https://github.com/bubkoo/restful-mock-server/

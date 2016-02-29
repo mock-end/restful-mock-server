@@ -1,0 +1,17 @@
+
+  The rule files defined the match rules of the coming request, the path of URL
+  can be restful or any other valid URL path, together with the HTTP verb determine
+  the response. An rule could be like this:
+
+  path/to/your/api: {
+      get: {
+          delay: 200,
+          timeout: false,
+          statusCode: 200,
+          data: { ... }
+          cookies: { ... }
+      },
+      post:{ ... }
+  }
+
+  For more details see https://github.com/bubkoo/restful-mock-server/
