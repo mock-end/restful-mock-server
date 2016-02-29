@@ -1,0 +1,24 @@
+{
+  "restartable": "rs",
+  "verbose": false,
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": "3030"
+  },
+  "execMap": {
+    "": "node --debug",
+    "js": "node --debug"
+  },
+  "watch": [
+    "lib/",
+    "doc/",
+    "bin/",
+    "rules/"
+  ],
+  "ignore": [
+    ".git",
+    ".idea",
+    "node_modules"
+  ],
+  "ext": "js json coffee yaml"
+}

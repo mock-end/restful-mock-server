@@ -87,12 +87,6 @@ module.exports = {
                     'shuffle': '@shuffle([1,2,3,4,5,6,7,8,9])'
                 },
 
-                'address': {
-                    // 'countryList': '@countryList',
-                    // 'provinceList': '@provinceList',
-                    'randomArea': '@randomArea'
-                },
-
                 'datetime': {
                     'now1': '@now',
                     'now2': '@now("YYYY年MM月DD日 HH时mm分ss秒")',
