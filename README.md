@@ -26,13 +26,11 @@ $ npm install restful-mock-server
 ```
 
 
-
 ## Usage
 
 ```
 $ mock [options] [--rules path-to-rules.js]
 ```
-
 
 The available options are:
 
@@ -52,6 +50,16 @@ The available options are:
   -h, --help command ........ Show details for the specified command.
   --no-color ................ Disable colors in the console.
 ```
+
+## API Reference
+
+Assuming installation via NPM, you can load this module in your application like this:
+
+```js
+var mockServer = require("restful-mock-server");
+mockServer(options);
+```
+
 
 ## Related
 
