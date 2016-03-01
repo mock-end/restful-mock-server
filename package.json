@@ -1,9 +1,9 @@
 {
   "name": "restful-mock-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mock server returning random JSON from schema.",
   "bin": {
-    "flexproxy": "./bin/app.js"
+    "mock": "./bin/app.js"
   },
   "main": "./lib",
   "scripts": {
@@ -16,7 +16,10 @@
   "keywords": [
     "mock",
     "restful",
-    "server"
+    "server",
+    "API",
+    "test",
+    "rest"
   ],
   "author": {
     "name": "bubkoo",
