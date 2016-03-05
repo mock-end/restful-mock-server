@@ -1,6 +1,6 @@
 # restful-mock-server
 
-A mock server returning random JSON from schema. 
+> A mock server returning random JSON from schema. 
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/restful-mock-server/blob/master/LICENSE)
 
